@@ -1,0 +1,35 @@
+<%= require('../partials/headbody/headbody.html').default %>
+    <%= require('../partials/pageloader/investment-pageloader.html').default %>
+        <%= require('../partials/header/index-header.html').default %>
+
+            <div class="adminuiux-wrap">
+                <main class="adminuiux-content" onclick="contentClick()">
+
+                    <!-- breadcrumb -->
+                    <div class="container-fluid mt-4">
+                        <div class="row gx-3 align-items-center">
+                            <div class="col-12 col-sm">
+                                <nav aria-label="breadcrumb" class="mb-2">
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item bi"><a href="investment-dashboard.html"><i class="bi bi-house-door me-1 fs-14"></i> Dashboard</a></li>
+                                        <li class="breadcrumb-item active bi" aria-current="page">Blank</li>
+                                    </ol>
+                                </nav>
+                                <h5>Blank</h5>
+                            </div>
+                            <div class="col-12 col-sm-auto text-end py-3 py-sm-0">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="container mt-4" id="main-content">
+                    </div>
+                </main>
+            </div>
+
+            <%= require('../partials/footer/index-footer.html').default %>
+
+                <!-- Page Level js -->
+                <%= require('../partials/footbody/footbody.html').default %>

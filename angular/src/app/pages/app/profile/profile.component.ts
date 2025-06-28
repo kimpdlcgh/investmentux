@@ -1,0 +1,173 @@
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
+
+@Component({
+    selector: "app-profile",
+    standalone: true,
+    imports: [RouterLink],
+    template: `
+        <!-- breadcrumb -->
+        <div class="container-fluid mt-4">
+            <div class="row gx-3 align-items-center">
+                <div class="col-12 col-sm">
+                    <nav aria-label="breadcrumb" class="mb-2">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item bi"><a routerLink="/app/dashboard">Home</a></li>
+                            <li class="breadcrumb-item active bi" aria-current="page">My Profile</li>
+                        </ol>
+                    </nav>
+                    <h5>My Profile</h5>
+                </div>
+                <div class="col-auto py-1 ms-auto">
+                    <button routerLink="/app/profile-settings" class="btn btn-theme"><i class="bi bi-pencil-square me-1"></i> Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container mt-4" id="main-content">
+            <div class="coverimg height-250 w-100 rounded position-relative">
+                <img src="assets/img/modern-ai-image/modern-bg-3.jpg" alt="" class="d-none " />
+            </div>
+
+            <div class="row z-index-1 mb-4 mt--75 position-relative">
+                <div class="col-12 col-md-auto text-center">
+                    <figure class="avatar avatar-150 rounded-circle coverimg mx-3">
+                        <img src="assets/img/modern-ai-image/user-6.jpg" alt="" class="d-none " />
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row gx-3">
+                <div class="col-12 col-md-12 col-lg-12 col-xxl-8">
+                    <div class="row">
+                        <div class="col mb-3">
+                            <h4 class="mb-1">
+                                <span class="position-relative"
+                                    >Angelina
+                                    <span class="position-absolute top-50 start-100 translate-middle p-1 bg-success rounded-circle mx-2"></span>
+                                </span>
+                            </h4>
+                            <p class="text-secondary mb-1">Investor <span class="mx-2">|</span> <i class="bi bi-clock"></i> Full Time <span class="mx-2">|</span> <i class="bi bi-coin"></i> $150 - $ 500</p>
+                            <p class="">
+                                Villamore Hospital, 12, Featherstone Street, Ward, London, NG25 5AY, United Kingdom
+                                <a class="btn btn-link btn-square"><i class="bi bi-geo-alt"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-auto mb-3 text-end">
+                            <h5 class="mb-1"><i class="bi bi-star-fill text-warning"></i> 5.0 <br /></h5>
+                            <p class="text-secondary small">150 Reviews</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-4">
+                        <div class="col-auto">
+                            <h5>39 <small>yr</small></h5>
+                            <p class="text-secondary small"><i class="bi bi-cake me-1"></i> 26-04-1982</p>
+                        </div>
+                        <div class="col-auto">
+                            <h5>B+</h5>
+                            <p class="text-secondary small"><i class="bi bi-droplet-half"></i> Blood Group</p>
+                        </div>
+                        <div class="col-auto">
+                            <h5>52</h5>
+                            <p class="text-secondary small"><i class="bi bi-speedometer"></i> Weight</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <a routerLink="/add/add-appointment" class="btn btn-theme mb-2"> <i data-feather="plus" class="me-1"></i> <span>Book Appointment</span> </a>
+                        <button class="btn btn-outline-success mx-2 mb-2"><i data-feather="phone"></i> <span>Make a Call</span></button>
+                        <button class="btn btn-outline-warning mb-2"><i data-feather="message-circle"></i> <span>Send Message</span></button>
+                    </div>
+                    <hr class="mt-0 mb-4" />
+                    <h6 class="mb-3">Professional bio</h6>
+                    <p>A regular investor and doing investment practising for the past 13 years and having a wide range of experience in finance sector with all kinds of deposits.</p>
+
+                    <hr class="mt-0 mb-4" />
+
+                    <h6 class="mb-3">Academic qualification</h6>
+                    <p>
+                        MBA, Management University, UK<br />
+                        MA Deposit, Finance Institute, Russia<br />
+                        Banking, Finance College and Hospital, United States
+                    </p>
+
+                    <hr class="mt-0 mb-4" />
+
+                    <h6 class="mb-3">Industrial experience</h6>
+                    <div class="card adminuiux-card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="coverimg avatar avatar-80 rounded">
+                                        <img src="assets/img/modern-ai-image/kids-1.jpg" alt="" class="d-none" />
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <h6>Lively Investment Services</h6>
+                                    <p class="text-secondary mb-1">Mutual Fund Specialist <span class="mx-2">|</span> <i class="bi bi-clock"></i> Full Time <span class="mx-2">|</span> <i class="bi bi-calendar"></i> 2021 - 2023, 3 year</p>
+                                    <p class="">Villamore Hospital, 12, Featherstone Street, Ward, London, NG25 5AY, United Kingdom</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card adminuiux-card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="coverimg avatar avatar-80 rounded">
+                                        <img src="assets/img/modern-ai-image/kids-2.jpg" alt="" class="d-none" />
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <h6>All is Well investment company</h6>
+                                    <p class="text-secondary mb-1">Deposit Specialist <span class="mx-2">|</span> <i class="bi bi-clock"></i> Full Time <span class="mx-2">|</span> <i class="bi bi-calendar"></i> 2020 - 2021, 1 year</p>
+                                    <p class="">12, Featherstone Street, Ward, London, NG25 5AY, United Kingdom</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xxl-4 position-sticky" style="top: 5.5rem;">
+                    <!-- specialize treatment highlight -->
+                    <div class="card adminuiux-card mb-4">
+                        <div class="card-header">
+                            <h6>Specialized treatment</h6>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group adminuiux-list-group bg-none border-0">
+                                <li class="list-group-item">Shares</li>
+                                <li class="list-group-item">Mutual Funds</li>
+                                <li class="list-group-item">Deposit</li>
+                                <li class="list-group-item">Fixed Deposit</li>
+                                <li class="list-group-item">Gov. Bonds</li>
+                                <li class="list-group-item">Loan</li>
+                                <li class="list-group-item">Insurance</li>
+                                <li class="list-group-item">and many more...</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- offer -->
+                    <div class="card adminuiux-card position-relative overflow-hidden bg-theme-1 mb-4">
+                        <figure class="coverimg position-absolute w-100 h-100 start-0 top-0 m-0 z-index-0 opacity-50">
+                            <img src="assets/img/modern-ai-image/lion-2.jpg" class="mw-100" alt="" style="display: none;" />
+                        </figure>
+                        <div class="card-body position-relative z-index-1">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="bg-theme-1 text-white text-center p-3 rounded">
+                                        <h2 class="mb-2">20% <small>OFF</small></h2>
+                                        <h5>Holiday Season</h5>
+                                        <p class="opacity-75 small">Price including with our launch offer get 5% Extra</p>
+                                        <button class="copy-text btn btn-sm btn-rounded btn-outline-dashed text-white border-white">GOSEASON</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `,
+})
+export class ProfileComponent {}

@@ -1,0 +1,929 @@
+<%= require('../partials/headbody/headbody.html').default %>
+  <%= require('../partials/pageloader/investment-pageloader.html').default %>
+    <%= require('../partials/header/investment-header.html').default %>
+
+      <!-- page wrapper -->
+      <div class="adminuiux-wrap">
+
+        <!-- Standard sidebar -->
+        <%= require('../partials/navigation/investment-sidebar.html').default %>
+
+          <main class="adminuiux-content has-sidebar" onclick="contentClick()">
+            <!-- body content of pages -->
+
+            <!-- breadcrumb -->
+            <div class="container-fluid mt-4">
+              <div class="row gx-3 align-items-center">
+                <div class="col-12 col-sm">
+                  <nav aria-label="breadcrumb" class="mb-2">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item bi"><a href="investment-dashboard.html">Home</a></li>
+                      <li class="breadcrumb-item active bi" aria-current="page">All Pages</li>
+                    </ol>
+                  </nav>
+                  <h5>Pages</h5>
+                </div>
+                <div class="col-auto">
+                </div>
+              </div>
+            </div>
+
+            <!-- content -->
+            <div class="container mt-4" id="main-content">
+              <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-dashboard.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Dashboard</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-wallet.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Wallet</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-goals.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Goals</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-add-goal.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Create Goal</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-investment-plans.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Investment Plans</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-mutual-fund-detail.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Mutual Fund Details</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-mutual-funds.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Mutual Funds</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-portfolio.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>My Portfolio</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-explore.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Explore</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-search-result.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Search Result <span class="badge badge-light badge-sm text-bg-danger mx-1">New</span></p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-calculator.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Calculator</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-transaction.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Transactions</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-statistics.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Statistics</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-company-shares.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Company Shares</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-share-details.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Share Details <span class="badge badge-light badge-sm text-bg-danger mx-1">New</span></p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-search-mutual-funds.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Search Mutual Funds</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-referral.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Referral</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-deposit.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Deposit</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-calculator.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Calculator</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-loan-list.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Loan List <span class="badge badge-light badge-sm text-bg-danger mx-1">New</span></p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-loan-details.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Loan Details</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-loan-under-process-details.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Loan Under Process</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-loan-request.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Loan Request</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-loan-request-success.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Loan Request Success</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-add-blog.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Add Blog</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-add-invoice.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Add Invoice</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-add-ticket.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Add Ticket</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-billing.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Billing</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-earning.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Earning</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-blog-details.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Blog Details</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-blogs.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Blogs</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-change-password.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Change Password</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-chat-call.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Chat and Call</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-contactus.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Contact us</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-help-center.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Help Center</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-inbox.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Inbox</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-login.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Login</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-mysubscription.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>My Subscription</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-onboarding.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Onboarding</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-personalization.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Personalize</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-profile.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Profile</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-profile-kyc-start.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Profile KYC Start</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-profile-kyc.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Profile KYC <span class="badge badge-light badge-sm text-bg-danger mx-1">New</span></p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-forgot-password.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Forgot Password</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-settings-contact.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Settings Contact</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-settings-payment.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Settings Payment</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-settings-timing.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Settings Timing</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-settings-users.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Settings Users</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-settings.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Settings</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-signup-success.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Signup success</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-signup.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Sign up</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-subscriptions.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Subscription</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-ticket-list.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Ticket List</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="investment-users.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Users</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="page-not-found.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>4<i class="bi bi-exclamation-circle mx-1 text-danger"></i>4 - Page not found</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="page-not-found-2.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>4<i class="bi bi-exclamation-circle mx-1 text-danger"></i>4 - Page not found 2</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="page-not-found-3.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>4<i class="bi bi-exclamation-circle mx-1 text-danger"></i>4 - Page not found 3</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="under-construction.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Under Construction</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <a href="coming-soon.html" target="_blank" class="card adminuiux-card style-none">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Coming Soon</p>
+                        </div>
+                        <div class="col-auto">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </main>
+
+      </div>
+
+      <!-- page footer -->
+      <%= require('../partials/footer/investment-footer.html').default %>
+        <%= require('../partials/offcanvas/theming.html').default %>
+
+          <!-- Page Level js -->
+          <%= require('../partials/footbody/footbody.html').default %>

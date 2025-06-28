@@ -1,0 +1,549 @@
+<%= require('../partials/headbody/headbody.html').default %>
+    <%= require('../partials/pageloader/investment-pageloader.html').default %>
+        <%= require('../partials/header/investment-header.html').default %>
+
+            <!-- page wrapper -->
+            <div class="adminuiux-wrap">
+
+                <!-- Standard sidebar -->
+                <%= require('../partials/navigation/investment-sidebar.html').default %>
+
+                    <main class="adminuiux-content has-sidebar" onclick="contentClick()">
+                        <!-- body content of pages -->
+
+                        <!-- breadcrumb -->
+                        <div class="container-fluid mt-4">
+                            <div class="row gx-3 align-items-center">
+                                <div class="col-12 col-sm">
+                                    <nav aria-label="breadcrumb" class="mb-2">
+                                        <ol class="breadcrumb mb-0">
+                                            <li class="breadcrumb-item bi"><a href="investment-dashboard.html"><i class="bi bi-house-door me-1 fs-14"></i> Dashboard</a></li>
+                                            <li class="breadcrumb-item active bi" aria-current="page">Explore</li>
+                                        </ol>
+                                    </nav>
+                                    <h5>Explore</h5>
+                                </div>
+                                <div class="col-12 col-sm-auto text-end py-3 py-sm-0">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content  -->
+                        <div class="container mt-4" id="main-content">
+
+                            <!-- Welcome box -->
+                            <div class="row align-items-center py-4">
+                                <div class="col-12 col-lg-6 col-xxl-8">
+                                    <h3 class="fw-normal mb-0 text-secondary">Let's explore best</h3>
+                                    <h1 class="mb-4">The Investment Plan</h1>
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-11 col-xxl-8 mb-4">
+                                            <div class="input-group">
+                                                <input class="form-control border-end-0" type="text" placeholder="Search investment plans">
+                                                <button class="btn btn-lg btn-theme btn-square"><i class="bi bi-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12"></div>
+                                        <div class="col-auto">
+                                            <div class="row">
+                                                <div class="col-auto theme-green mb-4">
+                                                    <span class="avatar avatar-40 rounded border-theme-1 border text-theme-1">
+                                                        <i class="bi bi-person-check h5"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-auto theme-green mb-4">
+                                                    <p class="text-theme-1 small">100+ Best professionals<br>for your support </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="row">
+                                                <div class="col-auto theme-purple mb-4">
+                                                    <span class="avatar avatar-40 rounded border-theme-1 border text-theme-1">
+                                                        <i class="bi bi-shield-check h5"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-auto theme-purple mb-4">
+                                                    <p class="text-theme-1 small">We have Quick, Easy<br> and Trusted partners</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Offer Carousel -->
+                                <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                                    <div class="swiper swipernav">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <!-- offer -->
+                                                <div class="card adminuiux-card position-relative overflow-hidden bg-theme-1">
+                                                    <div class="position-absolute top-0 start-0 h-100 w-100 z-index-0 coverimg opacity-50">
+                                                        <img src="assets/img/modern-ai-image/flamingo-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-body z-index-1">
+                                                        <h2>Great Offer!</h2>
+                                                        <h4 class="fw-medium">You have <b>LOAN</b> of <b>$ 800000.00</b> offer from HSBCD Bank</h4>
+                                                        <p class="mb-4">No documentation required...</p>
+                                                        <button class="btn btn-light my-1">Apply Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <!-- offer -->
+                                                <div class="card adminuiux-card position-relative overflow-hidden bg-teal text-white">
+                                                    <div class="position-absolute top-0 start-0 h-100 w-100 z-index-0 coverimg opacity-25">
+                                                        <img src="assets/img/modern-ai-image/flamingo-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-body z-index-1">
+                                                        <h2>Great Offer!</h2>
+                                                        <h4 class="fw-medium">You have <b>LOAN</b> of <b>$ 800000.00</b> offer from HSBCD Bank</h4>
+                                                        <p class="mb-4">No documentation required...</p>
+                                                        <button class="btn btn-light my-1">Apply Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <!-- offer -->
+                                                <div class="card adminuiux-card position-relative overflow-hidden bg-pink text-white">
+                                                    <div class="position-absolute top-0 start-0 h-100 w-100 z-index-0 coverimg opacity-50">
+                                                        <img src="assets/img/modern-ai-image/flamingo-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-body z-index-1">
+                                                        <h2>Great Offer!</h2>
+                                                        <h4 class="fw-medium">You have <b>LOAN</b> of <b>$ 800000.00</b> offer from HSBCD Bank</h4>
+                                                        <p class="mb-4">No documentation required...</p>
+                                                        <button class="btn btn-light my-1">Apply Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <!-- start investment -->
+                                <div class="col-12">
+                                    <div class="row mb-2">
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-company-shares.html" class="card adminuiux-card style-none text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 h3 bi bi-bank mb-3"></i>
+                                                    <p class="text-secondary small">Company Shares</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-mutual-funds.html" class="card adminuiux-card style-none text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 bi bi-calendar-event h3 mb-3"></i>
+                                                    <p class="text-secondary small">Mutual Funds Buy/SIP</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-deposit.html" class="card adminuiux-card style-none text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 bi bi-percent h3 mb-3"></i>
+                                                    <p class="text-secondary small">Fixed Deposit Schemes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-investment-plans.html" class="card adminuiux-card style-none text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 bi bi-cash-stack h3 mb-3"></i>
+                                                    <p class="text-secondary small">Investment Plans</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-investment-plans.html" class="card adminuiux-card style-none text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 bi bi-person-walking h3 mb-3"></i>
+                                                    <p class="text-secondary small">Retirement Plans</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-investment-plans.html" class="card adminuiux-card style-none text-center">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 bi bi-tags h3 mb-3"></i>
+                                                    <p class="text-secondary small">Tax Saving Investments</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-investment-plans.html" class="card adminuiux-card style-none text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 bi bi-shield-check h3 mb-3"></i>
+                                                    <p class="text-secondary small">Guaranteed Return</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl mb-3">
+                                            <a href="investment-investment-plans.html" class="card adminuiux-card style-none text-center">
+                                                <div class="card-body">
+                                                    <i class="avatar avatar-40 text-theme-1 bi bi-building-lock h3 mb-3"></i>
+                                                    <p class="text-secondary small">Government Securities</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <h5>Top Trending Funds</h5>
+                                </div>
+                                <!-- top funds -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card adminuiux-card mb-4">
+                                        <div class="card-body">
+                                            <h5 class="fw-medium mb-1">JACKY New age EV and automotive Fund</h5>
+                                            <p class="text-secondary mb-4">Direct <i class="bi bi-chevron-right"></i> Growth <i class="bi bi-chevron-right"></i> Thematic </p>
+
+                                            <div class="row align-items-center mb-4">
+                                                <div class="col-6 text-start mb-3">
+                                                    <h6 class="fw-medium">$150.1250</h6>
+                                                    <p class="text-secondary small">Current NAV <span>10 Aug 2025</span></p>
+                                                </div>
+                                                <div class="col-6 text-end mb-3">
+                                                    <h6 class="fw-medium">$2426.50 cr</h6>
+                                                    <p class="text-secondary small">AUM</p>
+                                                </div>
+                                                <div class="col-6 text-start">
+                                                    <h6 class="fw-medium text-success">+32.5%</h6>
+                                                    <p class="text-secondary small">CAGR <span>5 Years</span></p>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <h6 class="fw-medium">0.79%</h6>
+                                                    <p class="text-secondary small">Expanse Ratio</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                    <button class="btn btn-theme">Buy</button>
+                                                    <button class="btn btn-theme mx-2">SIP</button>
+                                                </div>
+                                                <div class="col"></div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-square btn-outline-theme theme-red"><i class="bi bi-heart"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card adminuiux-card mb-4">
+                                        <div class="card-body">
+                                            <h5 class="fw-medium mb-1">OrganicX Agriculture and innovation Fund</h5>
+                                            <p class="text-secondary mb-4">Direct <i class="bi bi-chevron-right"></i> Growth <i class="bi bi-chevron-right"></i> FoF </p>
+
+                                            <div class="row align-items-center mb-4">
+                                                <div class="col-6 text-start mb-3">
+                                                    <h6 class="fw-medium">$205.6530</h6>
+                                                    <p class="text-secondary small">Current NAV <span>10 Aug 2025</span></p>
+                                                </div>
+                                                <div class="col-6 text-end mb-3">
+                                                    <h6 class="fw-medium">$9586.50 cr</h6>
+                                                    <p class="text-secondary small">AUM</p>
+                                                </div>
+                                                <div class="col-6 text-start">
+                                                    <h6 class="fw-medium text-success">+15.5%</h6>
+                                                    <p class="text-secondary small">CAGR <span>5 Years</span></p>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <h6 class="fw-medium">0.65%</h6>
+                                                    <p class="text-secondary small">Expanse Ratio</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                    <button class="btn btn-theme">Buy</button>
+                                                    <button class="btn btn-theme mx-2">SIP</button>
+                                                </div>
+                                                <div class="col"></div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-square btn-outline-theme theme-red"><i class="bi bi-heart"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card adminuiux-card mb-4">
+                                        <div class="card-body">
+                                            <h5 class="fw-medium mb-1">Energy and New Smart Technology Fund</h5>
+                                            <p class="text-secondary mb-4">Direct <i class="bi bi-chevron-right"></i> Growth <i class="bi bi-chevron-right"></i> ELSS </p>
+
+                                            <div class="row align-items-center mb-4">
+                                                <div class="col-6 text-start mb-3">
+                                                    <h6 class="fw-medium">$156.1250</h6>
+                                                    <p class="text-secondary small">Current NAV <span>10 Aug 2025</span></p>
+                                                </div>
+                                                <div class="col-6 text-end mb-3">
+                                                    <h6 class="fw-medium">$3265.50 cr</h6>
+                                                    <p class="text-secondary small">AUM</p>
+                                                </div>
+                                                <div class="col-6 text-start">
+                                                    <h6 class="fw-medium text-success">+25.5%</h6>
+                                                    <p class="text-secondary small">CAGR <span>5 Years</span></p>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <h6 class="fw-medium">0.65%</h6>
+                                                    <p class="text-secondary small">Expanse Ratio</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                    <button class="btn btn-theme">Buy</button>
+                                                    <button class="btn btn-theme mx-2">SIP</button>
+                                                </div>
+                                                <div class="col"></div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-square btn-outline-theme theme-red"><i class="bi bi-heart"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mb-4">
+                                    <a href="investment-mutual-funds.html" class="btn btn-link">View all funds</a>
+                                </div>
+
+                                <!-- top investment plans -->
+                                <div class="col-12 mb-4">
+                                    <h5>Top Investment Plans</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card adminuiux-card mb-3">
+                                        <div class="card-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-12 col-sm-9 col-xxl mb-3 mb-xxl-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto">
+                                                            <div class="avatar avatar-60 rounded coverimg">
+                                                                <img src="assets/img/modern-ai-image/tree-3.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>Guaranteed Return Plan</h5>
+                                                            <span class="badge badge-light text-bg-theme-1">5 Year Payment</span>
+                                                            <span class="badge badge-light text-bg-success mx-1">Pay Monthly</span>
+                                                            <span class="badge badge-light text-bg-warning">Gift Nifty 50 Fund</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-3 col-xxl-auto mb-3 mb-sm-0">
+                                                    <h5>$ 6.0 L</h5>
+                                                    <p class="text-secondary small">You will give</p>
+                                                </div>
+                                                <div class="col-12 col-md-9 col-xxl-4 mb-3 mb-md-0">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="row align-items-center justify-content-between">
+                                                                <div class="col-auto text-start">
+                                                                    <h5 class="mb-1">30.2%
+                                                                        <small>
+                                                                            <span class="badge badge-sm badge-light text-bg-success mx-1 fw-normal">Tax Free</span>
+                                                                        </small>
+                                                                    </h5>
+                                                                    <p class="text-secondary small">10 Yr Returns*</p>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <i class="bi bi-plus-lg"></i>
+                                                                </div>
+                                                                <div class="col-auto text-end">
+                                                                    <h5>$ 10.0 Cr</h5>
+                                                                    <p class="text-secondary small">in 30 years</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-outline-theme">Get Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card adminuiux-card mb-3">
+                                        <div class="card-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-12 col-sm-9 col-xxl mb-3 mb-xxl-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto">
+                                                            <div class="avatar avatar-60 rounded coverimg">
+                                                                <img src="assets/img/modern-ai-image/tree-1.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>iSelect Guaranteed Scheme</h5>
+                                                            <span class="badge badge-light text-bg-theme-1">7 Year Payment</span>
+                                                            <span class="badge badge-light text-bg-success mx-1">Pay Yearly</span>
+                                                            <span class="badge badge-light text-bg-warning">Jacky's 100 Fund</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-3 col-xxl-auto mb-3 mb-sm-0">
+                                                    <h5>$ 7.77 L</h5>
+                                                    <p class="text-secondary small">You will give</p>
+                                                </div>
+                                                <div class="col-12 col-md-9 col-xxl-4 mb-3 mb-md-0">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="row align-items-center justify-content-between">
+                                                                <div class="col-auto text-start">
+                                                                    <h5 class="mb-1">26.80%
+                                                                        <small>
+                                                                            <span class="badge badge-sm badge-light text-bg-success mx-1 fw-normal">Tax Free</span>
+                                                                        </small>
+                                                                    </h5>
+                                                                    <p class="text-secondary small">10 Yr Returns*</p>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <i class="bi bi-plus-lg"></i>
+                                                                </div>
+                                                                <div class="col-auto text-end">
+                                                                    <h5>$ 25.0 cr</h5>
+                                                                    <p class="text-secondary small">in 20 years</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-outline-theme">Get Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card adminuiux-card mb-3 border border-theme-1 theme-green position-relative">
+                                        <span class="ribbon bg-theme-1 position-absolute top-0 end-0 z-index-1">Recommended</span>
+                                        <div class="card-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-12 col-sm-9 col-xxl mb-3 mb-xxl-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto">
+                                                            <div class="avatar avatar-60 rounded coverimg">
+                                                                <img src="assets/img/modern-ai-image/tree-10.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>Guaranteed income for retirement</h5>
+                                                            <span class="badge badge-light text-bg-theme-1">10 Year Payment</span>
+                                                            <span class="badge badge-light text-bg-success mx-1">Pay Monthly</span>
+                                                            <span class="badge badge-light text-bg-warning">Nifty Consumer 100 Fund</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-3 col-xxl-auto mb-3 mb-sm-0">
+                                                    <h5>$ 10.0 L</h5>
+                                                    <p class="text-secondary small">You will give</p>
+                                                </div>
+                                                <div class="col-12 col-md-9 col-xxl-4 mb-3 mb-md-0">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="row align-items-center justify-content-between">
+                                                                <div class="col-auto text-start">
+                                                                    <h5 class="mb-1">37.65%
+                                                                        <small>
+                                                                            <span class="badge badge-sm badge-light text-bg-success mx-1 fw-normal">Tax Free</span>
+                                                                        </small>
+                                                                    </h5>
+                                                                    <p class="text-secondary small">10 Yr Returns*</p>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <i class="bi bi-plus-lg"></i>
+                                                                </div>
+                                                                <div class="col-auto text-end">
+                                                                    <h5>$ 16.25 Cr</h5>
+                                                                    <p class="text-secondary small">in 22 years</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-outline-theme">Get Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card adminuiux-card mb-3">
+                                        <div class="card-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-12 col-sm-9 col-xxl mb-3 mb-xxl-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto">
+                                                            <div class="avatar avatar-60 rounded coverimg">
+                                                                <img src="assets/img/modern-ai-image/tree-21.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>Smart Saving Guaranteed</h5>
+                                                            <span class="badge badge-light text-bg-theme-1">5 Year Payment</span>
+                                                            <span class="badge badge-light text-bg-success mx-1">Pay Yearly</span>
+                                                            <span class="badge badge-light text-bg-warning">Nifty 100, 50 Fund</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-3 col-xxl-auto mb-3 mb-sm-0">
+                                                    <h5>$ 8.0 L</h5>
+                                                    <p class="text-secondary small">You will give</p>
+                                                </div>
+                                                <div class="col-12 col-md-9 col-xxl-4 mb-3 mb-md-0">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="row align-items-center justify-content-between">
+                                                                <div class="col-auto text-start">
+                                                                    <h5 class="mb-1">29.0%
+                                                                        <small>
+                                                                            <span class="badge badge-sm badge-light text-bg-success mx-1 fw-normal">Tax Free</span>
+                                                                        </small>
+                                                                    </h5>
+                                                                    <p class="text-secondary small">10 Yr Returns*</p>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <i class="bi bi-plus-lg"></i>
+                                                                </div>
+                                                                <div class="col-auto text-end">
+                                                                    <h5>$ 12.0 Cr</h5>
+                                                                    <p class="text-secondary small">in next 25 years</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-outline-theme">Get Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mb-4">
+                                    <a href="investment-deposit.html" class="btn btn-link">View all deposit plans</a>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </main>
+
+            </div>
+
+            <!-- page footer -->
+            <%= require('../partials/footer/investment-footer.html').default %>
+                <%= require('../partials/offcanvas/theming.html').default %>
+
+                    <!-- Page Level js -->
+                    <%= require('../partials/footbody/footbody.html').default %>

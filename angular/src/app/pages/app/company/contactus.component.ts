@@ -1,0 +1,160 @@
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
+
+@Component({
+    selector: "app-contactus",
+    standalone: true,
+    imports: [RouterLink],
+    template: `
+        <!-- breadcrumb -->
+        <div class="container-fluid mt-3 mt-lg-4">
+            <div class="row gx-3 gx-lg-4 align-items-center">
+                <div class="col col-sm">
+                    <nav aria-label="breadcrumb" class="mb-2">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item bi">
+                                <a routerLink="/app/dashboard"><i class="bi bi-house-door me-1 fs-14"></i> Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item active bi" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+                    <h5>Contact us</h5>
+                </div>
+                <div class="col-auto"></div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="container mt-4" id="main-content">
+            <div class="card adminuiux-card mb-3 mb-lg-4">
+                <div class="card-body">
+                    <div class="row gx-3 gx-lg-4">
+                        <div class="col-12 col-md-6 col-xl-5 d-flex flex-column px-lg-4">
+                            <div class="row h-100 align-items-center justify-content-center ">
+                                <div class="col-12">
+                                    <h4 class="mb-0">We will be happy to help you!</h4>
+                                    <p class="text-secondary small mb-3">Contact us now, we will be back to you as soon as possible</p>
+                                    <div class="row gx-3 gx-lg-4">
+                                        <div class="col-12 col-lg-6 mb-2">
+                                            <div class="form-group mb-3 position-relative check-valid">
+                                                <div class="input-group input-group-lg">
+                                                    <span class="input-group-text text-theme-1"><i class="bi bi-person"></i></span>
+                                                    <div class="form-floating">
+                                                        <input type="text" placeholder="First Name" value="Max" required="" class="form-control" />
+                                                        <label>First Name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback mb-3">Add valid data</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 mb-2">
+                                            <div class="form-group mb-3 position-relative">
+                                                <div class="input-group input-group-lg">
+                                                    <span class="input-group-text text-theme-1"><i class="bi bi-person"></i></span>
+                                                    <div class="form-floating">
+                                                        <input type="text" placeholder="Last Name" value="Johnson" required="" class="form-control" />
+                                                        <label>last Name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback mb-3">Add valid data</div>
+                                        </div>
+
+                                        <div class="col-12 col-md-12 mb-2">
+                                            <div class="form-group mb-3 position-relative">
+                                                <div class="input-group input-group-lg">
+                                                    <span class="input-group-text text-theme-1"><i class="bi bi-envelope"></i></span>
+                                                    <div class="form-floating">
+                                                        <input type="email" placeholder="Email Address" required="" class="form-control" />
+                                                        <label>Email Address</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback mb-3">Add valid data</div>
+                                        </div>
+
+                                        <div class="col-12 col-md-12 mb-2">
+                                            <div class="form-group mb-3 position-relative check-valid">
+                                                <div class="input-group input-group-lg">
+                                                    <span class="input-group-text text-theme-1"><i class="bi bi-chat-right-text"></i></span>
+                                                    <div class="form-floating">
+                                                        <textarea placeholder="Message" class="form-control h-auto" rows="4"></textarea>
+                                                        <label>Message</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback mb-3">Add valid data</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <button type="button" class="btn btn-lg w-100 btn-theme">Submit Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-7">
+                            <div class="card adminuiux-card bg-theme-1-space position-relative overflow-hidden h-100">
+                                <div class="position-absolute start-0 top-0 h-100 w-100 coverimg opacity-75 z-index-0">
+                                    <img src="assets/img/background-image/backgorund-image-8.jpg" alt="" />
+                                </div>
+                                <div class="card-body text-center position-relative z-index-1">
+                                    <img src="assets/img/investment/slider.png" alt="" class="mw-100 mb-3" />
+                                    <h4 class="text-white mb-3">Create and Manage your Investment appointments easily at your own very personalized space.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- quick links -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card adminuiux-card mb-3 mb-lg-4">
+                        <div class="card-body">
+                            <i class="bi bi-chat-right-dots avatar avatar-80 text-theme-1 bg-theme-1-subtle rounded h1 mb-3"></i><br />
+                            <h5 class="text-theme-1">Communicate</h5>
+                            <p class="text-secondary mb-3">You have live assistant with whom you can share your query &amp; get answered.</p>
+                            <a routerLink="/app/ticket-list" class="btn btn-theme">Watch Community</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card adminuiux-card  mb-4">
+                        <div class="card-body">
+                            <i class="bi bi-life-preserver avatar avatar-80 text-theme-1 bg-theme-1-subtle rounded h1 mb-3"></i><br />
+                            <h5 class="text-theme-1">Get Support</h5>
+                            <p class="text-secondary mb-3">Connect with our expert by submitting details with photos &amp; documents.</p>
+                            <a routerLink="/app/add-ticket" class="btn btn-theme">Create Ticket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card adminuiux-card mb-3 mb-lg-4">
+                        <div class="card-body">
+                            <i class="bi bi-person-video3 avatar avatar-80 text-theme-1 bg-theme-1-subtle rounded h1 mb-3"></i><br />
+                            <h5 class="text-theme-1">Schedule a Demo</h5>
+                            <p class="text-secondary mb-3">Get details of features and quick look on how it works. Schedule a demo.</p>
+                            <a href="javascript:void(0)" class="btn btn-theme">Book Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- email communication -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-xl-4 text-md-end mb-3">
+                    <h5>Technical problem</h5>
+                    <p class="text-secondary small">If you have any type of technical challenges and would like to get help from us please drop an email at <a href="mailto:info&#64;adminuiux.cos">tech&#64;adminuiux.coms</a></p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-3">
+                    <h5>General Support</h5>
+                    <p class="text-secondary small">If you have any type of challenges regarding products and would like to get help from us please drop an email at <a href="mailto:info&#64;adminuiux.cos">sales&#64;adminuiux.coms</a></p>
+                </div>
+            </div>
+        </div>
+    `,
+})
+export class ContactUsComponent {}

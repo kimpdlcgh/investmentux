@@ -1,0 +1,144 @@
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
+
+@Component({
+    selector: "app-profile-subscription-plans",
+    standalone: true,
+    imports: [],
+    template: `
+        <!-- breadcrumb -->
+        <div class="container-fluid mt-3 mt-lg-4">
+            <div class="row gx-3 gx-lg-4 align-items-center">
+                <div class="col col-sm">
+                    <nav aria-label="breadcrumb" class="mb-2">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item bi">
+                                <a routerLink="/app/dashboard"><i class="bi bi-house-door me-1 fs-14"></i> Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item active bi" aria-current="page">Subscription Plans</li>
+                        </ol>
+                    </nav>
+                    <h5>All Subscriptions</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="container mt-4" id="main-content">
+            <div class="row gx-3 gx-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card adminuiux-card mb-3 mb-lg-4">
+                        <div class="card-body px-xl-4">
+                            <div class="text-center mb-3">
+                                <span class="badge badge-light text-bg-success">Active</span>
+                            </div>
+                            <div class="row gx-3 mb-4">
+                                <div class="col-auto">
+                                    <i class="avatar avatar-60 rounded bg-theme-1-subtle text-theme-1 h4 bi bi-person vm"></i>
+                                </div>
+                                <div class="col">
+                                    <h4>Personal</h4>
+                                    <p class="text-secondary">Perfect for the individuals</p>
+                                </div>
+                            </div>
+                            <div class="row gx-3 align-items-center mb-3">
+                                <div class="col-auto">
+                                    <h1 class="display-4"><span class="text-secondary">$</span>50</h1>
+                                </div>
+                                <div class="col">
+                                    <p class="text-secondary">per license</p>
+                                </div>
+                            </div>
+                            <h6>Basic includes:</h6>
+                            <ul class="list-group adminuiux-list-group">
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> All demo access</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> Unlimited Download</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> No Contact list</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> 10 transactions per day</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> 24/7 Customer Support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-theme">Buy Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card adminuiux-card bg-r-gradient border border-theme-1 mb-4">
+                        <div class="card-body px-xl-4">
+                            <div class="text-center mb-3">
+                                <span class="badge badge-light text-bg-theme-1">Recommended</span>
+                            </div>
+                            <div class="row gx-3 mb-4">
+                                <div class="col-auto">
+                                    <i class="avatar avatar-60 rounded bg-theme-1-subtle text-theme-1 h4 bi bi-people vm"></i>
+                                </div>
+                                <div class="col">
+                                    <h4 class="mb-1">Business</h4>
+                                    <p class="text-secondary">Multiple team &amp; customer</p>
+                                </div>
+                            </div>
+                            <div class="row gx-3 align-items-center mb-3">
+                                <div class="col-auto">
+                                    <h1 class="display-4"><span class="text-secondary">$</span>100</h1>
+                                </div>
+                                <div class="col">
+                                    <p class="text-secondary">per license</p>
+                                </div>
+                            </div>
+                            <h6>Basic includes:</h6>
+                            <ul class="list-group adminuiux-list-group">
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> All demo access</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> Unlimited Download</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> No Contact list</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> 10 transactions per day</li>
+                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle vm me-1"></i> 24/7 Customer Support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-theme">Buy Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card adminuiux-card mb-3 bg-theme-1">
+                        <div class="card-body px-xl-4">
+                            <div class="text-center mb-3">
+                                <span class="badge badge-light bg-white-opacity">Best</span>
+                            </div>
+                            <div class="row gx-3 mb-4">
+                                <div class="col-auto">
+                                    <i class="avatar avatar-60 rounded bg-white-opacity text-white h4 bi bi-building vm"></i>
+                                </div>
+                                <div class="col">
+                                    <h4 class="mb-1">Ultra Pro</h4>
+                                    <p class="opacity-75 small">Multiple Application</p>
+                                </div>
+                            </div>
+                            <div class="row gx-3 align-items-center mb-3">
+                                <div class="col-auto">
+                                    <h1 class="display-4"><span class="opacity-75">$</span>150</h1>
+                                </div>
+                                <div class="col">
+                                    <p class="opacity-75 small">per license</p>
+                                </div>
+                            </div>
+                            <h6>Basic includes:</h6>
+                            <ul class="list-group adminuiux-list-group">
+                                <li class="list-group-item text-white"><i class="bi bi-check-circle vm me-1"></i> All demo access</li>
+                                <li class="list-group-item text-white"><i class="bi bi-check-circle vm me-1"></i> Unlimited Download</li>
+                                <li class="list-group-item text-white"><i class="bi bi-check-circle vm me-1"></i> No Contact list</li>
+                                <li class="list-group-item text-white"><i class="bi bi-check-circle vm me-1"></i> 10 transactions per day</li>
+                                <li class="list-group-item text-white"><i class="bi bi-check-circle vm me-1"></i> 24/7 Customer Support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-none text-center">
+                            <button class="btn btn-light">Buy Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `,
+})
+export class ProfileSubscriptionPlansComponent {}

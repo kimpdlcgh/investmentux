@@ -1,0 +1,230 @@
+<%= require('../partials/headbody/headbody.html').default %>
+    <%= require('../partials/pageloader/investment-pageloader.html').default %>
+        <%= require('../partials/header/investment-header.html').default %>
+
+            <!-- page wrapper -->
+            <div class="adminuiux-wrap">
+
+                <!-- Standard sidebar -->
+                <%= require('../partials/navigation/investment-sidebar.html').default %>
+
+                    <main class="adminuiux-content has-sidebar" onclick="contentClick()">
+                        <!-- body content of pages -->
+
+                        <!-- breadcrumb -->
+                        <div class="container-fluid mt-4">
+                            <div class="row gx-3 align-items-center">
+                                <div class="col-12 col-sm">
+                                    <nav aria-label="breadcrumb" class="mb-2">
+                                        <ol class="breadcrumb mb-0">
+                                            <li class="breadcrumb-item bi"><a href="investment-dashboard.html"><i class="bi bi-house-door me-1 fs-14"></i> Dashboard</a></li>
+                                            <li class="breadcrumb-item active bi" aria-current="page">Wallet</li>
+                                        </ol>
+                                    </nav>
+                                    <h5>My Goals</h5>
+                                </div>
+                                <div class="col-12 col-sm-auto text-end py-3 py-sm-0">
+
+                                    <a href="investment-add-goal.html" class="btn btn-theme">
+                                        <i class="bi bi-plus-lg"></i> Create <span class="d-none d-md-inline">Goal</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="container mt-4" id="main-content">
+                            <div class="row">
+                                <!-- primary goal -->
+                                <div class="col-12 col-lg-12 col-xxl-4 mb-4 theme-teal">
+                                    <div class="card adminuiux-card position-relative overflow-hidden bg-theme-1 h-100">
+                                        <div class="position-absolute top-0 start-0 h-100 w-100 z-index-0 coverimg opacity-25">
+                                            <img src="assets/img/modern-ai-image/tree-15.jpg" alt="">
+                                        </div>
+                                        <div class="card-body z-index-1">
+                                            <div class="row align-items-center justify-content-center h-100 py-4">
+                                                <div class="col-11">
+                                                    <h2 class="fw-normal">Your goals saving has been grown by</h2>
+                                                    <h1 class="mb-3">$7.45k</h1>
+                                                    <p>1 goal will be completed soon</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--goals-->
+                                <div class="col-12 col-lg-6 col-xxl-4 mb-4">
+                                    <div class="card adminuiux-card">
+                                        <div class="card-body">
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-auto">
+                                                    <i class="bi bi-house fs-4 avatar avatar-50 bg-success text-white rounded"></i>
+                                                </div>
+                                                <div class="col">
+                                                    <h4 class="mb-0 fw-medium">Sweet Home</h4>
+                                                    <p class="small opacity-75">Life Goal</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-2 mb-3">
+                                                <div class="height-120 width-120 position-relative d-inline-block mx-auto text-white mb-3">
+                                                    <div id="circleprogressgreen1"></div>
+                                                </div>
+                                                <h2 class="mb-0">$ 22500.00</h2>
+                                                <p class="text-secondary">22 months</p>
+                                            </div>
+                                            <div class="row gx-3 justify-content-center mb-3">
+                                                <div class="col-auto py-2">
+                                                    <a class="btn btn-theme">+ Add Money</a>
+                                                </div>
+                                                <div class="col-auto py-2">
+                                                    <a class="btn btn-outline-theme"><i class="bi bi-bank"></i> Withdraw</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-4">
+                                                <div class="card-body">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto">
+                                                            <i class="bi bi-bullseye text-danger h1"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <p class="text-secondary">Your target for sweet home is 10% completed in 2 months</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center mb-3">
+                                                <div class="col-auto">
+                                                    <i class="bi bi-flag"></i>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="text-secondary small mb-1">Achieved</p>
+                                                    <p>$ 2250.00</p>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center mb-3">
+                                                <div class="col-auto">
+                                                    <i class="bi bi-calendar"></i>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="text-secondary small mb-1">Duration</p>
+                                                    <p>22-09-2027</p>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center mb-2">
+                                                <div class="col-auto">
+                                                    <i class="bi bi-cash-stack"></i>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="text-secondary small mb-1">Deposit</p>
+                                                    <p>$ 500.00 every 1st day of month</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a class="btn btn-square btn-outline-theme" data-bs-toggle="tooltip" title="Edit"><i class="bi bi-pencil"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--goals-->
+                                <div class="col-12 col-lg-6 col-xxl-4 mb-4">
+                                    <div class="card adminuiux-card overflow-hidden bg-theme-1">
+                                        <div class="card-body position-relative">
+                                            <div class="position-absolute top-0 start-0 h-100 w-100 z-index-0 coverimg opacity-25">
+                                                <img src="assets/img/modern-ai-image/taxi-1.jpg" alt="">
+                                            </div>
+                                            <div class="row gx-3 position-relative z-index-1">
+                                                <div class="col-12 mb-3">
+                                                    <div class="row">
+                                                        <div class="col-auto">
+                                                            <i class="bi bi-car-front fs-4 avatar avatar-50 bg-white-opacity text-white rounded"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h4 class="mb-0 fw-medium">Dream Car</h4>
+                                                            <p class="small opacity-75">Life Goal</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 text-center mt-2 mb-3">
+                                                    <div class="height-120 width-120 position-relative d-inline-block mx-auto text-white mb-3">
+                                                        <div id="circleprogressblue2"></div>
+                                                    </div>
+                                                    <h2 class="mb-0">$ 10500.00</h2>
+                                                    <p>12 months</p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row gx-3 justify-content-center">
+                                                        <div class="col-auto">
+                                                            <a class="btn btn-light">+ Add Money</a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a class="btn btn-outline-light"><i class="bi bi-bank"></i> Withdraw</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card adminuiux-card">
+                                            <div class="card-body">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                                <i class="bi bi-bullseye text-danger h1"></i>
+                                                            </div>
+                                                            <div class="col">
+                                                                <p class="text-secondary">Your target for sweet home is 50% completed in 6 months</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center mb-3">
+                                                    <div class="col-auto">
+                                                        <i class="bi bi-flag"></i>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="text-secondary small mb-1">Achieved</p>
+                                                        <p>$ 5250.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center mb-3">
+                                                    <div class="col-auto">
+                                                        <i class="bi bi-calendar"></i>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="text-secondary small mb-1">Duration</p>
+                                                        <p>19-10-2025</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center mb-2">
+                                                    <div class="col-auto">
+                                                        <i class="bi bi-cash-stack"></i>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="text-secondary small mb-1">Deposit</p>
+                                                        <p>$ 1050.00 every 15th day of month</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a class="btn btn-square btn-outline-theme" data-bs-toggle="tooltip" title="Edit"><i class="bi bi-pencil"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </main>
+
+            </div>
+
+            <!-- page footer -->
+            <%= require('../partials/footer/investment-footer.html').default %>
+                <%= require('../partials/offcanvas/theming.html').default %>
+
+                    <!-- Page Level js -->
+                    <script src="assets/js/investment/investment-goals.js"></script>
+                    <%= require('../partials/footbody/footbody.html').default %>
