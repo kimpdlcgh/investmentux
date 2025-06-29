@@ -1,0 +1,27 @@
+.invalid-feedback {
+    display: none;
+}
+.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+.check-strength {
+    margin-top: 5px;
+    height: 5px;
+    border-radius: 3px;
+}
+.check-strength.short {
+    background-color: #dc3545;
+    width: 33%;
+}
+.check-strength.weak {
+    background-color: #dc3545;
+    width: 33%;
+}
+.check-strength.good {
+    background-color: #ffc107;
+    width: 66%;
+}
+.check-strength.strong {
+    background-color: #28a745;
+    width: 100%;
+}

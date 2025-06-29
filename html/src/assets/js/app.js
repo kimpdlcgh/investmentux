@@ -1,44 +1,49 @@
+// src/assets/js/app.js
 import "../scss/style.scss";
 
-// jQuery 
+// jQuery
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-// Popper js
+// Popper.js
 import { createPopper } from '@popperjs/core';
 
-// Bootstrap 
+// Bootstrap
 import * as bootstrap from "bootstrap";
-// Note: If you want to make bootstrap globally available, e.g. for using `bootstrap.modal`
 window.bootstrap = bootstrap;
 
 // Feather icons
 import feather from "feather-icons";
 window.feather = feather;
 
-// Chart js
+// Chart.js
 import Chart from "chart.js/auto";
 window.Chart = Chart;
 
-// Swiper bundle 
+// Swiper
 import Swiper from 'swiper';
 window.Swiper = Swiper;
 
-// Moments js
+// Moment.js
 import moment from 'moment';
 window.moment = moment;
 
-// Daterangepicker 
+// Daterangepicker
 import daterangepicker from 'bootstrap-daterangepicker';
 window.daterangepicker = daterangepicker;
 
-// DataTable
-import 'datatables.net';
-window.dataTables = dataTables; // Note: 'dataTables' should be 'datatables.net' - this might be a typo in the original
-
-// DataTable Responsive
+// DataTables
+import dataTables from 'datatables.net';
+console.log('DataTables loaded:', !!dataTables); // Debug log
+if (typeof dataTables === 'function') {
+    window.dataTables = dataTables;
+} else {
+    console.error('DataTables not loaded as a function, delaying initialization');
+    setTimeout(() => window.dataTables = dataTables, 100); // Delay as a fallback
+}
 import 'datatables.net-responsive';
+console.log('jQuery loaded:', !!window.jQuery); // Debug log
 
 // Dragula
 import dragula from 'dragula';
@@ -62,7 +67,7 @@ window.listPlugin = listPlugin;
 import FroalaEditor from 'froala-editor';
 window.FroalaEditor = FroalaEditor;
 
-// Progressbar min js
+// Progressbar.js
 import ProgressBar from "progressbar.js";
 window.ProgressBar = ProgressBar;
 
@@ -77,8 +82,18 @@ window.lozad = lozad;
 // Simplebar
 import 'simplebar';
 
-// global js
-import './core/functions.js'; // Ensure these files are in src/core/
+// Auth0
+import { createAuth0Client } from '@auth0/auth0-spa-js';
+window.auth0 = { createAuth0Client };
+
+// Supabase
+import { createClient } from '@supabase/supabase-js';
+window.Supabase = { createClient };
+
+// Global JS
+import './core/functions.js';
 import './core/main.js';
 import './core/responsive.js';
 import './core/color-scheme.js';
+
+console.log('jQuery loaded:', !!window.jQuery);

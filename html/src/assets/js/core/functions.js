@@ -30,7 +30,7 @@ function fixedHeaderSpace() {
 window.fixedHeaderSpace = fixedHeaderSpace;
 
 function fixedFooterSpace() {
-    $(".adminuiux-mobile-footer").length > 0 && $("body").css("padding-bottom", $(".adminuiux-mobile-footer").outerHeight())
+    $(".adminuiux-mobile-footer").length > 0 && $("body").css("padding-bottom", $(".adminuiux-mobile-footer").outerHeight());
 }
 window.fixedFooterSpace = fixedFooterSpace;
 
@@ -44,7 +44,6 @@ function activeHeader() {
 window.activeHeader = activeHeader;
 
 // scrolling direction 
-
 function scrolldirection() {
     var lastScrollTop = document.documentElement.scrollTop;
 
@@ -64,7 +63,7 @@ window.scrolldirection = scrolldirection;
 
 // search open close
 function openSearch() {
-    $('.adminuiux-search-full').addClass('active')
+    $('.adminuiux-search-full').addClass('active');
 }
 window.openSearch = openSearch;
 
@@ -94,10 +93,8 @@ function setActivelink() {
         }
     });
 
-
     $(".adminuiux-sidebar .adminuiux-sidebar-inner .nav .nav-item .nav-link").each(function () {
         var linkPage = this.href;
-
         if (activePage == linkPage) {
             $(this).addClass("active");
             $(this).closest('.dropdown').find('.dropdown-menu').addClass('show');
@@ -109,7 +106,7 @@ function setActivelink() {
         if (activePage == linkPage) {
             $(this).addClass("active").attr('aria-current', 'page');
         }
-    })
+    });
 }
 window.setActivelink = setActivelink;
 
@@ -124,12 +121,12 @@ function initSidebar() {
 }
 window.initSidebar = initSidebar;
 
-// image cover ion background set
+// image cover on background set
 function coverimg() {
     $('.coverimg').each(function () {
         $(this).css('background-image', 'url(' + $(this).find('img').attr('src') + ')');
-        $(this).find('img').hide()
-    })
+        $(this).find('img').hide();
+    });
 }
 window.coverimg = coverimg;
 
@@ -154,8 +151,8 @@ $('.copycode').on('click', function () {
     document.execCommand('copy');
     document.body.removeChild(elem);
     setTimeout(function () {
-        thisEl.removeClass('active')
-    }, 500)
+        thisEl.removeClass('active');
+    }, 500);
 });
 
 //Scroll to top
@@ -173,14 +170,14 @@ function autoThemeMode() {
         const query = window.matchMedia('(prefers-color-scheme: dark)');
         fn(query.matches);
         query.addEventListener('change', (event) => fn(event.matches));
-    }
+    };
     runColorMode((isDarkMode) => {
         if (isDarkMode) {
             document.documentElement.setAttribute("data-bs-theme", "dark");
         } else {
             document.documentElement.setAttribute("data-bs-theme", "light");
         }
-    })
+    });
 }
 window.autoThemeMode = autoThemeMode;
 
@@ -221,8 +218,8 @@ window.featherjs = featherjs;
 
 // bootstrap tooltips 
 function bstooltip() {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 }
 window.bstooltip = bstooltip;
 
@@ -236,7 +233,6 @@ function swipernav() {
                 delay: 2500,
                 disableOnInteraction: true,
             },
-
         });
     }
 }
@@ -269,7 +265,7 @@ function mydropzone() {
 }
 window.mydropzone = mydropzone;
 
-// editor  FroalaEditor
+// editor FroalaEditor
 function froalaeditor() {
     if ($('.FroalaEditor').length > 0) {
         var editor = new FroalaEditor('.FroalaEditor');
@@ -280,7 +276,6 @@ window.froalaeditor = froalaeditor;
 /* date picker calendar */
 function datepicker() {
     if ($('#datepicker').length > 0) {
-
         $('#datepicker').daterangepicker({
             "singleDatePicker": true,
             "minYear": 2023,
@@ -300,7 +295,6 @@ function datepicker() {
         }, function (start, end, label) {
             //console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
         });
-
     }
 }
 window.datepicker = datepicker;
@@ -308,7 +302,6 @@ window.datepicker = datepicker;
 /* inline calendar */
 function inlinedatepicker() {
     if ($('#inlinewrap1').length > 0) {
-
         $('#inlinewrap1').daterangepicker({
             "singleDatePicker": true,
             "minYear": 2023,
@@ -330,9 +323,8 @@ function inlinedatepicker() {
             //console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
         });
 
-        /* inline calendar activate  */
+        /* inline calendar activate */
         $('#inlinewrap1').click();
-
     }
 }
 window.inlinedatepicker = inlinedatepicker;
@@ -395,63 +387,71 @@ function daterangeranges() {
 }
 window.daterangeranges = daterangeranges;
 
-//dataTable global
+//dataTable global (temporarily disabled)
 function dataTables() {
-    /* Initialize dataTable */
-    if ($('#dataTable').length > 0) {
-        $('#dataTable').DataTable({
-            searching: false,
-            lengthChange: false,
-            autoWidth: false,
-            columnDefs: [{ orderable: false, targets: 4 }],
-            order: [[0, 'desc']],
-            pageLength: 6,
-            responsive: true,
-        });
-        $('#dataTable tr').find('td:visible:last').addClass('lastvisible');
-    }
-
+    // Temporarily disabled to focus on Auth flow
+    // const $dataTable = $('#dataTable');
+    // if ($dataTable.length > 0) {
+    //     console.log('Initializing DataTable for:', $dataTable.attr('id'));
+    //     $dataTable.DataTable({
+    //         searching: false,
+    //         lengthChange: false,
+    //         autoWidth: false,
+    //         columnDefs: [{ orderable: false, targets: 4 }],
+    //         order: [[0, 'desc']],
+    //         pageLength: 6,
+    //         responsive: true,
+    //     });
+    //     $dataTable.find('tr').find('td:visible:last').addClass('lastvisible');
+    // } else {
+    //     console.log('No #dataTable found, skipping DataTable initialization');
+    // }
 }
 window.dataTables = dataTables;
 
 function adjustDataTable() {
-    /* resize */
-    var table = $('#dataTable').DataTable();
-    table.columns.adjust().draw();
-    lastvisibletd();
+    /* Adjust DataTable on resize, only if it exists */
+    const $dataTable = $('#dataTable');
+    if ($dataTable.length && $.fn.DataTable.isDataTable($dataTable)) {
+        console.log('Adjusting DataTable for:', $dataTable.attr('id'));
+        $dataTable.DataTable().columns.adjust().draw();
+        lastvisibletd();
+    } else {
+        console.log('No DataTable instance found for adjustment');
+    }
 }
 window.adjustDataTable = adjustDataTable;
 
-/* responsive last visible table cell after cell hides*/
+/* responsive last visible table cell after cell hides */
 function lastvisibletd() {
     $('.table tbody tr td').removeClass('lastvisible');
     $('.table tbody tr').each(function () {
         var thisis = $(this);
         thisis.find('td:visible:last').addClass('lastvisible');
-    })
+    });
 }
 window.lastvisibletd = lastvisibletd;
 
-/* pasword strength checker */
+/* password strength checker */
 function checkStrength(password, fieldpasswrap) {
     var strength = 0;
 
     if (password.length < 6 || password.length < 1) {
         $('#checksterngthdisplay').removeClass().addClass('short check-strength');
         $('#textpassword').removeClass().addClass('text-secondary small');
-        return 'Too short'
+        return 'Too short';
     }
-    if (password.length > 7) strength += 1
-    // If password contains both lower and uppercase characters, increase strength value.  
-    if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1
-    // If it has numbers and characters, increase strength value.  
-    if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1
-    // If it has one special character, increase strength value.  
-    if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
-    // If it has two special characters, increase strength value.  
-    if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
-    // Calculated strength value, we can return messages  
-    // If value is less than 2  
+    if (password.length > 7) strength += 1;
+    // If password contains both lower and uppercase characters, increase strength value.
+    if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1;
+    // If it has numbers and characters, increase strength value.
+    if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1;
+    // If it has one special character, increase strength value.
+    if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1;
+    // If it has two special characters, increase strength value.
+    if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1;
+    // Calculated strength value, we can return messages
+    // If value is less than 2
     if (strength < 2) {
         $('#checksterngthdisplay').removeClass().addClass('weak check-strength');
         $('#textpassword').removeClass().addClass('text-danger small');
@@ -471,21 +471,19 @@ function checkStrength(password, fieldpasswrap) {
 }
 window.checkStrength = checkStrength;
 
-/* passsword strength checker */
+/* password strength checker */
 function checkstrength() {
     if ($('#checkstrength').length > 0) {
         $('#checkstrength').on('keyup', function () {
-
             var fieldpass = $(this);
             var fieldpasswrap = $(this).closest('.check-valid');
             checkStrength(fieldpass.val(), fieldpasswrap);
 
             if (this.value != '') {
-                $('#textpassword').html(checkStrength(fieldpass.val(), fieldpasswrap))
+                $('#textpassword').html(checkStrength(fieldpass.val(), fieldpasswrap));
                 fieldpass.closest('.check-valid').next('.invalid-feedback').hide();
-                // $(this).closest('.check-valid').addClass('is-valid');
             } else {
-                fieldpasswrap.removeClass('is-valid').next('.invalid-feedback').show().text("Please enter valid input")
+                fieldpasswrap.removeClass('is-valid').next('.invalid-feedback').show().text("Please enter valid input");
                 $('#checksterngthdisplay').removeClass();
             }
         });
@@ -499,32 +497,32 @@ function innersidebar() {
 }
 window.innersidebar = innersidebar;
 
-/* header h padding top*/
+/* header h padding top */
 function headerpaddingTop() {
     if ($('.header-pt').length > 0) {
-        $('.header-pt').css('top', $('header.adminuiux-header > .navbar').outerHeight())
+        $('.header-pt').css('top', $('header.adminuiux-header > .navbar').outerHeight());
     }
 }
 window.headerpaddingTop = headerpaddingTop;
 
-/* bootstrap popover  */
+/* bootstrap popover */
 function bspopover() {
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 }
 window.bspopover = bspopover;
 
 /* bootstrap toast message */
 function bstoast() {
-    const toastElList = document.querySelectorAll('.toast')
-    const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl))
+    const toastElList = document.querySelectorAll('.toast');
+    const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl));
 }
 window.bstoast = bstoast;
 
 /* Range Customize */
 function range2() {
-    const rangeEle = document.querySelector("#range2")
-    const rangeValue = document.querySelector(".value2")
+    const rangeEle = document.querySelector("#range2");
+    const rangeValue = document.querySelector(".value2");
 
     rangeEle.addEventListener("input", (event) => {
         const temprangeValue = event.target.value;
@@ -533,14 +531,14 @@ function range2() {
         const progress = (temprangeValue / rangeEle.max) * 100;
 
         rangeEle.style.background = `linear-gradient(to right, var(--adminuiux-theme-1) ${progress}%, var(--adminuiux-bg-1) ${progress}%)`;
-    })
+    });
 }
 window.range2 = range2;
 
 // 2
 function range3() {
-    const rangeEle3 = document.querySelector("#range3")
-    const rangeValue3 = document.querySelector(".value3")
+    const rangeEle3 = document.querySelector("#range3");
+    const rangeValue3 = document.querySelector(".value3");
 
     rangeEle3.addEventListener("input", (event) => {
         const temprangeValue = Number(event.target.value);
@@ -551,15 +549,15 @@ function range3() {
 
         rangeEle3.style.background = `linear-gradient(to right, var(--adminuiux-theme-1) ${progress}%, var(--adminuiux-bg-1) ${progress}%)`;
 
-        rangeEle3.style.setProperty("--thumb-rotate", `${(temprangeValue / 100) * 2160}deg`)
-    })
+        rangeEle3.style.setProperty("--thumb-rotate", `${(temprangeValue / 100) * 2160}deg`);
+    });
 }
 window.range3 = range3;
 
 // 2
 function range4() {
-    const rangeEle4 = document.querySelector("#range4")
-    const rangeValue4 = document.querySelector(".value4")
+    const rangeEle4 = document.querySelector("#range4");
+    const rangeValue4 = document.querySelector(".value4");
 
     rangeEle4.addEventListener("input", (event) => {
         const temprangeValue = event.target.value;
@@ -568,7 +566,7 @@ function range4() {
         const progress = (temprangeValue / rangeEle4.max) * 100;
 
         rangeEle4.style.background = `linear-gradient(to right, var(--adminuiux-theme-1) ${progress}%, var(--adminuiux-bg-1) ${progress}%)`;
-    })
+    });
 }
 window.range4 = range4;
 
@@ -578,8 +576,8 @@ if ($('.rangevalue').length > 0) {
         $('#' + ranges.attr('data-value')).val(ranges.val());
         ranges.on('mousemove', function () {
             $('#' + ranges.attr('data-value')).val(ranges.val());
-        })
-    })
+        });
+    });
 }
 if ($('.rangevalues').length > 0) {
     $('.rangevalues').each(function () {
@@ -587,9 +585,9 @@ if ($('.rangevalues').length > 0) {
         var setrangeval = rangesval.attr('id');
 
         rangesval.on('change', function () {
-            $('[data-value="' + setrangeval + '"]').val(rangesval.val())
-        })
-    })
+            $('[data-value="' + setrangeval + '"]').val(rangesval.val());
+        });
+    });
 }
 
 function selectable() {
@@ -601,16 +599,16 @@ function selectable() {
             } else {
                 $(this).toggleClass('active');
             }
-        })
+        });
     }
 }
 window.selectable = selectable;
 
 function isinframe() {
     if (self !== top) {
-        body.addClass('adminuiux-in-iframe')
+        body.addClass('adminuiux-in-iframe');
     } else {
-        body.removeClass('adminuiux-in-iframe')
+        body.removeClass('adminuiux-in-iframe');
     }
 }
 window.isinframe = isinframe;

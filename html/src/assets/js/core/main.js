@@ -10,25 +10,24 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-$(window).on('load', function () {
-
+$(document).ready(function () { // Ensure DOM is ready
     // main links active 
     setActivelink();
 
     // set header space 
-    fixedHeaderSpace()
+    fixedHeaderSpace();
 
     // fixed sticky footer space
-    fixedFooterSpace()
+    fixedFooterSpace();
 
-    //feature icons 
+    // feature icons 
     featherjs();
 
     // cover img background set
     coverimg();
 
     // don't close dropdown
-    dontclosedd()
+    dontclosedd();
 
     // bs tooltip 
     bstooltip();
@@ -43,7 +42,7 @@ $(window).on('load', function () {
     // froala editor 
     froalaeditor();
 
-    //datepicker class
+    // datepicker class
     datepicker();
 
     // global date range 
@@ -52,10 +51,12 @@ $(window).on('load', function () {
     // date range with ranges
     daterangeranges();
 
-    //dataTable global
-    dataTables();
+    // dataTable global (temporarily disabled)
+    // if ($('#dataTable').length) {
+    //     dataTables();
+    // }
 
-    //inline datepicker
+    // inline datepicker
     inlinedatepicker();
 
     /* bootstrap popover  */
@@ -77,7 +78,7 @@ $(window).on('load', function () {
     initBackToTop();
 
     // hide page loader 
-    PageLoaderHide()
+    PageLoaderHide();
 
     // in iframe 
     isinframe();
@@ -88,9 +89,11 @@ $(window).on('scroll', function () {
     activeHeader();
 
     scrolldirection();
-})
+});
 
 $(window).on('resize', function () {
     // active header
-    adjustDataTable()
-})
+    // if ($('#dataTable').length) {
+    //     adjustDataTable();
+    // }
+});
