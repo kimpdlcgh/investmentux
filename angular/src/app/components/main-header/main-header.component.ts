@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit, Renderer2, Inject } from "@angular/core";
 import { DOCUMENT } from "@angular/common";
 import { RouterLink } from "@angular/router";
+import { AuthService } from "../../services/auth.service";
 
 @Component({
     selector: "app-main-header",
@@ -289,7 +290,7 @@ import { RouterLink } from "@angular/router";
                                     <a class="dropdown-item" routerLink="/app/profile-settings"> <i class="bi bi-gear avatar avatar-18 me-1"></i> Account Setting </a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item theme-red" routerLink="/app/signin"> <i class="bi bi-power avatar avatar-18 me-1"></i> Logout </a>
+                                    <a class="dropdown-item theme-red" (click)="logout()" style="cursor: pointer;"> <i class="bi bi-power avatar avatar-18 me-1"></i> Logout </a>
                                 </div>
                             </div>
                         </div>
@@ -493,7 +494,7 @@ export class MainHeaderComponent {
     htmlElement: any | null = null;
     buttonElement: any | null = null;
 
-    constructor(private renderer: Renderer2, @Inject(DOCUMENT) private document: Document) {}
+    constructor(private renderer: Renderer2, @Inject(DOCUMENT) private document: Document, private authService: AuthService) {}
 
     ngOnInit() {
         this.openSidebar();
@@ -577,6 +578,14 @@ export class MainHeaderComponent {
             this.renderer.removeClass(searchEl, "active");
         } else {
             this.renderer.addClass(searchEl, "active");
+        }
+    }
+
+    async logout() {
+        try {
+            await this.authService.logout();
+        } catch (error) {
+            console.error("Logout error:", error);
         }
     }
 }

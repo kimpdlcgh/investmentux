@@ -1,10 +1,12 @@
 import { Routes } from "@angular/router";
 import { InternalLayoutComponent } from "./internal-layout.component";
+import { authGuard } from "../../guards/auth.guard";
 
 export const INTERNAL_ROUTES: Routes = [
     {
         path: "",
         component: InternalLayoutComponent,
+        canActivate: [authGuard],
         children: [
             {
                 path: "dashboard",
