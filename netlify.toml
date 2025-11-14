@@ -1,0 +1,16 @@
+[build]
+  publish = "angular/dist/demo"
+  command = "cd angular && npm install && npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "cd angular && npm start"
+  port = 4200
+  publish = "angular/dist/demo"

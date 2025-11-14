@@ -1,0 +1,23 @@
+{
+  "name": "investmentux",
+  "version": "1.0.0",
+  "description": "Investment UX Platform with Firebase Authentication",
+  "scripts": {
+    "build": "cd angular && npm install && npm run build",
+    "start": "cd angular && npm start",
+    "install": "cd angular && npm install"
+  },
+  "dependencies": {
+    "firebase": "^12.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimpdlcgh/investmentux.git"
+  },
+  "author": "kimpdlcgh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kimpdlcgh/investmentux/issues"
+  },
+  "homepage": "https://github.com/kimpdlcgh/investmentux#readme"
+}
